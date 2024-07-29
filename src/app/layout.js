@@ -14,6 +14,12 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={inter.className}>
         <header>
+          <div className="flex justify-center mb-10">
+            <h1 className="text-center text-5xl p-10">
+              MARTÍN CASTRO{" "}
+              <span className="font-bold block">SOFTWARE DEVELOPER</span>
+            </h1>
+          </div>
           <Links />
         </header>
         {children}

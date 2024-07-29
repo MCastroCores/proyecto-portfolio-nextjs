@@ -2,39 +2,42 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { MdHomeMax, MdOutlineContactPhone } from "react-icons/md";
+import { GiArchiveRegister } from "react-icons/gi";
+import { IoLogIn } from "react-icons/io5";
 
 export function Links() {
   const pathname = usePathname();
 
   return (
     <nav className="flex list-none justify-around mt-5">
-      <li className="hover:opacity-30">
+      <li className="hover:opacity-30 text-3xl">
         <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
-          Inicio
+          <MdHomeMax />
         </Link>
       </li>
-      <li className="hover:opacity-30">
+      <li className="hover:opacity-30 text-3xl">
         <Link
           className={`link ${pathname === "/register" ? "active" : ""}`}
           href="/register"
         >
-          Registro
+          <GiArchiveRegister />
         </Link>
       </li>
-      <li className="hover:opacity-30">
+      <li className="hover:opacity-30 text-3xl">
         <Link
           className={`link ${pathname === "/login" ? "active" : ""}`}
           href="/login"
         >
-          Login
+          <IoLogIn />
         </Link>
       </li>
-      <li className="hover:opacity-30">
+      <li className="hover:opacity-30 text-3xl">
         <Link
           className={`link ${pathname === "/contact" ? "active" : ""}`}
           href="/contact"
         >
-          Contacto
+          <MdOutlineContactPhone />
         </Link>
       </li>
     </nav>
