@@ -1,11 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export function Links() {
   const pathname = usePathname();
@@ -19,7 +18,7 @@ export function Links() {
           </PopoverButton>
           <PopoverPanel
             transition
-            anchor="bottom"
+            anchor="bottom end"
             className="divide-y divide-white/5 rounded-xl bg-white/5 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
           >
             <div className="p-3">
@@ -87,7 +86,7 @@ export function Links() {
           </PopoverButton>
           <PopoverPanel
             transition
-            anchor="bottom"
+            anchor="bottom start"
             className="divide-y divide-white/5 rounded-xl bg-white/5 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
           >
             <div className="p-3">

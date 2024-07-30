@@ -16,9 +16,11 @@ export default function RootLayout({ children }) {
       <body className={`${roboto.className} bg-black text-white`}>
         <header>
           <div className="flex justify-center">
-            <h1 className="text-center text-5xl p-10">
+            <h1 className={` ${inter.className} text-center text-5xl p-10`}>
               MARTÍN CASTRO{" "}
-              <span className="font-bold block">SOFTWARE DEVELOPER</span>
+              <span className="font-bold block hover:animate-bounce">
+                SOFTWARE DEVELOPER
+              </span>
             </h1>
           </div>
           <Links />
