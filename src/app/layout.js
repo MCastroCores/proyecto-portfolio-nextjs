@@ -1,8 +1,9 @@
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import { Links } from "./components/Links.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio Martín Castro",
@@ -12,9 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={`${roboto.className} bg-black text-white`}>
         <header>
-          <div className="flex justify-center mb-10">
+          <div className="flex justify-center">
             <h1 className="text-center text-5xl p-10">
               MARTÍN CASTRO{" "}
               <span className="font-bold block">SOFTWARE DEVELOPER</span>
