@@ -11,7 +11,7 @@ export function Links() {
 
   return (
     <div className="flex h-96 w-full justify-center pt-10">
-      <div className="flex gap-8">
+      <div className="flex gap-16 md:gap-40">
         <Popover className="group">
           <PopoverButton className="block text-sm/6 font-semibold text-white focus:outline-none data-[active]:text-white/50 data-[hover]:text-white/50 data-[focus]:outline-1 data-[focus]:outline-white">
             Home
@@ -33,8 +33,8 @@ export function Links() {
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
                 href="/#skills"
               >
-                <p className="font-semibold text-white">SKILLS</p>
-                <p className="text-white/50">TECNOLOGÍAS DESTACADAS</p>
+                <p className="font-semibold text-white">TECNOLOGÍAS</p>
+                <p className="text-white/50">FULLSTACK</p>
               </Link>
               <Link
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
