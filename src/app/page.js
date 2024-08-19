@@ -9,6 +9,10 @@ import {
   IconBxlCss3,
   IconBrandJavascript,
   IconMysql,
+  IconNextdotjs,
+  IconGithubactions,
+  IconFirebase,
+  IconVercel,
 } from "./components/IconsSvg.jsx";
 
 export default function Home() {
@@ -105,6 +109,11 @@ export default function Home() {
               width="100px"
               height="100px"
             />
+            <IconNextdotjs
+              className="text-white transition-transform transform hover:scale-110"
+              width="100px"
+              height="100px"
+            />
           </div>
         </article>
       </section>
@@ -124,6 +133,33 @@ export default function Home() {
               height="100px"
             />
             <IconGithub
+              className="text-white transition-transform transform hover:scale-110"
+              width="100px"
+              height="100px"
+            />
+          </div>
+        </article>
+      </section>
+      <section className="mb-20">
+        <article>
+          <h2 className="text-xl sm:text-3xl text-center font-extrabold p-20 text-white">
+            DESPLIEGUE DE APLICACIONES
+          </h2>
+          <p className="text-white text-center mb-6 text-lg leading-relaxed">
+            Para el despliegue de aplicaciones me especializo en las siguientes:
+          </p>
+          <div className="flex justify-around gap-10 my-10">
+            <IconGithubactions
+              className="text-white transition-transform transform hover:scale-110"
+              width="100px"
+              height="100px"
+            />
+            <IconFirebase
+              className="text-white transition-transform transform hover:scale-110"
+              width="100px"
+              height="100px"
+            />
+            <IconVercel
               className="text-white transition-transform transform hover:scale-110"
               width="100px"
               height="100px"
