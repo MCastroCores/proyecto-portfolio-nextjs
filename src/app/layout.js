@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`${roboto.className} bg-black text-white`}>
+      <body className={`${roboto.className} bg-gray-900 text-white`}>
         <header>
           <div className="flex justify-center">
             <h1 className={` ${inter.className} text-center text-5xl p-10`}>

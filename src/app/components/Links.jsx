@@ -82,7 +82,7 @@ export function Links() {
         </Popover>
         <Popover>
           <PopoverButton className="block text-sm/6 font-semibold text-white focus:outline-none data-[active]:text-white/50 data-[hover]:text-white/50 data-[focus]:outline-1 data-[focus]:outline-white">
-            Redes
+            Contacto
           </PopoverButton>
           <PopoverPanel
             transition
@@ -92,7 +92,8 @@ export function Links() {
             <div className="p-3">
               <Link
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                href="#"
+                href="https://www.linkedin.com/in/martincastrocores/"
+                target="_blank"
               >
                 <p className="font-semibold text-white">LINKEDIN</p>
                 <p className="text-white/50">
@@ -101,57 +102,28 @@ export function Links() {
               </Link>
               <Link
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                href="#"
+                href="https://github.com/MCastroCores"
+                target="_blank"
               >
                 <p className="font-semibold text-white">GITHUB</p>
                 <p className="text-white/50">
                   <FaGithubSquare />
                 </p>
               </Link>
-              <Link
+              <a
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                href="#"
+                href="mailto:martincastrocores@gmail.com"
+                target="_blank"
               >
                 <p className="font-semibold text-white">GMAIL</p>
                 <p className="text-white/50">
                   <SiGmail />
                 </p>
-              </Link>
+              </a>
             </div>
           </PopoverPanel>
         </Popover>
       </div>
     </div>
-    // <nav className="flex list-none justify-around mt-5">
-    //   <li className="hover:opacity-30 text-3xl">
-    //     <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
-    //       <MdHomeMax />
-    //     </Link>
-    //   </li>
-    //   <li className="hover:opacity-30 text-3xl">
-    //     <Link
-    //       className={`link ${pathname === "/register" ? "active" : ""}`}
-    //       href="/register"
-    //     >
-    //       <GiArchiveRegister />
-    //     </Link>
-    //   </li>
-    //   <li className="hover:opacity-30 text-3xl">
-    //     <Link
-    //       className={`link ${pathname === "/login" ? "active" : ""}`}
-    //       href="/login"
-    //     >
-    //       <IoLogIn />
-    //     </Link>
-    //   </li>
-    //   <li className="hover:opacity-30 text-3xl">
-    //     <Link
-    //       className={`link ${pathname === "/contact" ? "active" : ""}`}
-    //       href="/contact"
-    //     >
-    //       <MdOutlineContactPhone />
-    //     </Link>
-    //   </li>
-    // </nav>
   );
 }
