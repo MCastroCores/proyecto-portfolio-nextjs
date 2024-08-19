@@ -18,7 +18,7 @@ export function Links() {
           </PopoverButton>
           <PopoverPanel
             transition
-            anchor="bottom end"
+            anchor="bottom"
             className="divide-y divide-white/5 rounded-xl bg-white/5 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
           >
             <div className="p-3">
@@ -86,7 +86,7 @@ export function Links() {
           </PopoverButton>
           <PopoverPanel
             transition
-            anchor="bottom start"
+            anchor="bottom"
             className="divide-y divide-white/5 rounded-xl bg-white/5 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
           >
             <div className="p-3">
