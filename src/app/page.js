@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import {
   IconReactjsLine,
   IconTsnode,
@@ -17,9 +20,49 @@ import {
 
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 
+const textRotation = [
+  { txt: "DISEÑO UX/UI" },
+  { txt: "LANDING PAGES" },
+  { txt: "APLICACIONES WEB" },
+];
+
 export default function Home() {
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [shouldChangeText, setShouldChangeText] = useState(false);
+  const [isFirstChange, setIsFirstChange] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShouldChangeText(true);
+      const timeout = setTimeout(
+        () => {
+          setCurrentTextIndex(
+            (prevIndex) => (prevIndex + 1) % textRotation.length
+          );
+          setShouldChangeText(false);
+          setIsFirstChange(false);
+        },
+        isFirstChange ? 0 : 4000
+      ); // Cambiar el texto cuando la opacidad es 0 la segunda vez
+
+      return () => clearTimeout(timeout);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isFirstChange]);
+
   return (
     <main className="min-h-screen w-full p-10 mb-20 bg-gray-900">
+      <h2 className="text-2xl sm:text-4xl text-center font-extrabold p-20 text-white animate-fade border-2 border-white w-2/3 mx-auto rounded-lg">
+        <span
+          key={currentTextIndex}
+          className={`inline-block ${
+            shouldChangeText ? "opacity-0" : "opacity-100"
+          } transition-opacity duration-1000`}
+        >
+          {textRotation[currentTextIndex].txt}
+        </span>
+      </h2>
       <section className="mb-20">
         <article className="flex flex-col justify-center items-center">
           <h2

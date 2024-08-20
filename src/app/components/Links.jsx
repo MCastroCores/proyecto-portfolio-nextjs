@@ -10,7 +10,7 @@ export function Links() {
   const pathname = usePathname();
 
   return (
-    <div className="flex h-96 w-full justify-center pt-10">
+    <div className="flex h-80 w-full justify-center pt-10">
       <div className="flex gap-16 md:gap-40">
         <Popover className="group">
           <PopoverButton className="block text-sm/6 font-semibold text-white focus:outline-none data-[active]:text-white/50 data-[hover]:text-white/50 data-[focus]:outline-1 data-[focus]:outline-white">

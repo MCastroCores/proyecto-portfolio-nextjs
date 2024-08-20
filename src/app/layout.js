@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
           <div className="flex justify-center">
             <h1 className={`${inter.className} text-center text-5xl p-10`}>
               MARTÍN CASTRO{" "}
-              <span className="font-bold block">SOFTWARE DEVELOPER</span>
+              <span className="mt-5 font-bold block">SOFTWARE DEVELOPER</span>
             </h1>
           </div>
           <Image
