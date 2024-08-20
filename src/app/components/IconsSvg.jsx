@@ -1,4 +1,3 @@
-// icon:reactjs-line | Remix Icon https://remixicon.com/ | Remix Design
 import * as React from "react";
 
 export function IconReactjsLine(props) {

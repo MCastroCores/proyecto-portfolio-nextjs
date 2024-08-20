@@ -6,18 +6,18 @@ const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio Martín Castro",
-  description: "Portfolio de Martín Castro",
+  title: "Martín Castro - Software Developer",
+  description: "Sitio web de Martín Castro, Software Developer",
   keywords:
     "Martín Castro, Software Developer, Portfolio, Web Development, Programming",
   author: "Martín Castro",
   robots: "index, follow",
   og: {
-    title: "Portfolio Martín Castro",
-    description: "Portfolio de Martín Castro",
+    title: "Martín Castro - Software Developer",
+    description: "Sitio web de Martín Castro, Software Developer",
     type: "website",
     url: "https://www.tu-dominio.com",
-    image: "https://www.tu-dominio.com/imagen-de-tu-sitio.jpg",
+    image: "/logoPortfolio.webp",
   },
 };
 
@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
+        <link rel="icon" href="/logoPortfolio.ico" type="image/x-icon" />
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.author} />
@@ -47,6 +48,14 @@ export default function RootLayout({ children }) {
           <Links />
         </header>
         {children}
+        <footer>
+          <div className="flex justify-center">
+            <p className="text-center p-10">
+              © {new Date().getFullYear()} Martín Castro. Todos los derechos
+              reservados.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );

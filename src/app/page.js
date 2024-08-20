@@ -15,6 +15,8 @@ import {
   IconVercel,
 } from "./components/IconsSvg.jsx";
 
+import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
+
 export default function Home() {
   return (
     <main className="min-h-screen w-full p-10 mb-20 bg-gray-900">
@@ -60,6 +62,7 @@ export default function Home() {
           </p>
         </article>
       </section>
+      <ScrollToTopButton />
       <section id="skills">
         <section className="mb-20">
           <article>
