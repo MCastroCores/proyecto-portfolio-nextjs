@@ -58,21 +58,21 @@ export function Links() {
             <div className="p-3">
               <Link
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                href="#"
+                href="/proyects#x-lite"
               >
                 <p className="font-semibold text-white">X-LITE</p>
                 <p className="text-white/50">REACT · NODE · SQL</p>
               </Link>
               <Link
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                href="#"
+                href="/proyects#vitalapp"
               >
                 <p className="font-semibold text-white">VITALAPP</p>
                 <p className="text-white/50">REACT · NODE · SQL</p>
               </Link>
               <Link
                 className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                href="#"
+                href="/proyects#koidate"
               >
                 <p className="font-semibold text-white">KOI-DATEFISIOTERAPIA</p>
                 <p className="text-white/50">REACT · TAILWINDCSS</p>

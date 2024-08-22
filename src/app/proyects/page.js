@@ -7,7 +7,7 @@ export default function Register() {
         PROYECTOS
       </h2>
       <section>
-        <article className="flex flex-col place-items-center">
+        <article id="x-lite" className="flex flex-col place-items-center">
           <h3 className="text-xl sm:text-2xl text-center font-extrabold p-20 text-white">
             X-LITE
           </h3>
@@ -19,7 +19,7 @@ export default function Register() {
             height={250}
           />
         </article>
-        <article className="flex flex-col place-items-center">
+        <article id="vitalapp" className="flex flex-col place-items-center">
           <h3 className="text-xl sm:text-2xl text-center font-extrabold p-20 text-white">
             VITALAPP
           </h3>
@@ -31,7 +31,7 @@ export default function Register() {
             height={250}
           />
         </article>
-        <article className="flex flex-col place-items-center">
+        <article id="koidate" className="flex flex-col place-items-center">
           <h3 className="text-xl sm:text-2xl text-center font-extrabold p-20 text-white">
             KOIDATE FISIOTERAPIA
           </h3>
